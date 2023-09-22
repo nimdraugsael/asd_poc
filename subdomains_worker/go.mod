@@ -17,8 +17,6 @@ require (
 	github.com/cheggaaa/pb/v3 v3.1.4 // indirect
 	github.com/cloudflare/circl v1.3.3 // indirect
 	github.com/cnf/structhash v0.0.0-20201127153200-e1b16c1ebc08 // indirect
-	github.com/contribsys/faktory v1.7.0 // indirect
-	github.com/contribsys/faktory_worker_go v1.6.1 // indirect
 	github.com/corpix/uarand v0.2.0 // indirect
 	github.com/dimchansky/utfbom v1.1.1 // indirect
 	github.com/dlclark/regexp2 v1.10.0 // indirect
@@ -47,6 +45,9 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/muesli/reflow v0.3.0 // indirect
 	github.com/muesli/termenv v0.15.2 // indirect
+	github.com/nats-io/nats.go v1.30.0 // indirect
+	github.com/nats-io/nkeys v0.4.5 // indirect
+	github.com/nats-io/nuid v1.0.1 // indirect
 	github.com/nwaples/rardecode v1.1.3 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect

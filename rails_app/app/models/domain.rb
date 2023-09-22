@@ -18,15 +18,15 @@ class Domain < ApplicationRecord
   end
 
   def aasm_start_subdomain_enumeration
-    queue = freshly_created? ? "go_critical" : "go_default"
+    priority = freshly_created? ? "critical" : "normal"
+    subject = "jobs.go.#{priority}.1"
 
     payload = {
-      jobtype: "EnumerateSubdomains",
-      queue: queue,
-      retry: 10, 
-      args: [self.id, domain], 
+      job: "EnumerateSubdomains",
+      params: {
+        domain: domain,
+      }
     }
-
-    Faktory::Client.new.push(payload)
+    $nats.publish(subject, payload.to_json)
   end
 end

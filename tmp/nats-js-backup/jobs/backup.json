@@ -1,0 +1,35 @@
+{
+  "config": {
+    "name": "jobs",
+    "subjects": [
+      "jobs.*.*.*"
+    ],
+    "retention": "limits",
+    "max_consumers": -1,
+    "max_msgs_per_subject": -1,
+    "max_msgs": -1,
+    "max_bytes": -1,
+    "max_age": 0,
+    "max_msg_size": -1,
+    "storage": "file",
+    "discard": "old",
+    "num_replicas": 1,
+    "duplicate_window": 120000000000,
+    "sealed": false,
+    "deny_delete": false,
+    "deny_purge": false,
+    "allow_rollup_hdrs": false,
+    "allow_direct": false,
+    "mirror_direct": false
+  },
+  "state": {
+    "messages": 68,
+    "bytes": 7121,
+    "first_seq": 1,
+    "first_ts": "2023-09-21T06:36:11.73277Z",
+    "last_seq": 68,
+    "last_ts": "2023-09-22T14:03:31.831364Z",
+    "num_subjects": 2,
+    "consumer_count": 1
+  }
+}
